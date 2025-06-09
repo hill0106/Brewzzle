@@ -1,0 +1,13 @@
+# Ignore Python virtual/conda environments
+brewzzle-env/
+
+# Ignore environment variable files
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore OS files
+.DS_Store 
