@@ -1,0 +1,5 @@
+Flask>=2.0
+googlemaps>=4.5
+pymongo>=4.0
+python-dotenv>=1.0
+Authlib>=1.2
