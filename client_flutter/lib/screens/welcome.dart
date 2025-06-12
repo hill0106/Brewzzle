@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'login.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -65,7 +66,10 @@ class WelcomeScreen extends StatelessWidget {
                   // Google Button
                   SizedBox(height: 48, width: screenWidth * 0.8, child:ElevatedButton(
                     onPressed: () {
-                      // TODO: Navigate to login screen
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const LoginScreen()),
+                      );
                     },
                     child: const Text(
                       'Log in with Email',
