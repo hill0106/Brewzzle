@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'login.dart';
+import 'signup.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -88,12 +89,15 @@ class WelcomeScreen extends StatelessWidget {
                       elevation: 0,
                     ),
                   ))),
-                  // Email Login Button
+                  // Email Signup Button
                   Padding(padding: const EdgeInsets.symmetric(vertical: 10), child:
                     SizedBox(height: 48, width: screenWidth * 0.8, child: ElevatedButton(
-                        onPressed: () {
-                        // TODO: Navigate to signup screen
-                        },
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const SignUpScreen()),
+                      );
+                    },
                         child: const Text(
                         'Sign up with Email',
                         style: TextStyle(
