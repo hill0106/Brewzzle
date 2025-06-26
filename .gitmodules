@@ -1,0 +1,6 @@
+[submodule "client_flutter"]
+	path = client_flutter
+	url = git@github.com:hill0106/client_flutter.git
+[submodule "server_flask"]
+	path = server_flask
+	url = git@github.com:hill0106/server_flask.git
